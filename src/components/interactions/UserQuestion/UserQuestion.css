@@ -1,0 +1,106 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.userQuestion {
+  color: #EAEAEA;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  font-family: "Happy times"; }
+  .userQuestion__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .userQuestion__input_wrapper {
+    border: solid 1px #EAEAEA;
+    width: 650px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin: 20px; }
+    .userQuestion__input_wrapper .userQuestion__label {
+      color: #ff7471;
+      font-size: 20px;
+      padding: 13px 16px;
+      width: 266px;
+      font-family: "Happy times"; }
+    .userQuestion__input_wrapper .userQuestion__input {
+      color: white;
+      width: 100%;
+      background: transparent;
+      border: none;
+      font-size: 15px;
+      font-family: "Archivo", sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px; }
+      .userQuestion__input_wrapper .userQuestion__input::placeholder {
+        font-size: 15px;
+        font-family: "Archivo", sans-serif;
+        font-weight: normal;
+        color: #EAEAEA;
+        opacity: 0.5; }
+    .userQuestion__input_wrapper .userQuestion__valid {
+      text-transform: lowercase;
+      font-family: "Archivo Black", sans-serif;
+      font-weight: normal;
+      font-size: 25px;
+      background: none;
+      border: none;
+      color: #EAEAEA;
+      opacity: 0.2;
+      cursor: pointer;
+      transition: opacity 0.5s ease-in;
+      opacity: 1;
+      margin-right: 10px; }
+      .userQuestion__input_wrapper .userQuestion__valid.empty {
+        opacity: 0.2; }
+      .userQuestion__input_wrapper .userQuestion__valid:hover, .userQuestion__input_wrapper .userQuestion__valid:focus, .userQuestion__input_wrapper .userQuestion__valid:active {
+        color: #EAEAEA; }
+  .userQuestion .wrapper-proposition {
+    display: flex;
+    align-self: center;
+    width: 650px;
+    align-items: center; }
+    .userQuestion .wrapper-proposition .propositions {
+      width: 100%; }
+      .userQuestion .wrapper-proposition .propositions .proposition {
+        position: relative;
+        color: #EAEAEA;
+        font-family: "Happy times";
+        font-size: 25px;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+        text-align: left;
+        font-size: 15px;
+        padding: 25px 0 0 32px;
+        line-height: 26px;
+        cursor: pointer;
+        opacity: 0.4;
+        transition: padding-left 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+        .userQuestion .wrapper-proposition .propositions .proposition:after {
+          content: "";
+          width: 110%;
+          height: 1px;
+          background-color: #EAEAEA;
+          position: absolute;
+          bottom: 6px;
+          left: 50%;
+          transform: translateX(-50%); }
+        .userQuestion .wrapper-proposition .propositions .proposition:after {
+          width: 90%; }
+        .userQuestion .wrapper-proposition .propositions .proposition:hover, .userQuestion .wrapper-proposition .propositions .proposition.clicked {
+          opacity: 1;
+          padding-left: 45px; }
+
+/*# sourceMappingURL=UserQuestion.css.map */

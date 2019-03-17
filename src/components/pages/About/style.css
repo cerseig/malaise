@@ -1,0 +1,205 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.About {
+  overflow: scroll;
+  width: 100%;
+  height: 100%; }
+  .About__grid--full {
+    width: 100%; }
+  .About__title {
+    margin-top: 50px;
+    height: 200px;
+    border-bottom: 1px solid #EAEAEA;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    .About__title img {
+      width: 100%;
+      margin-bottom: -30px;
+      text-align: center; }
+  .About__description {
+    padding: 60px 100px 120px 100px;
+    border-bottom: 1px solid #EAEAEA; }
+    .About__description__title {
+      font-size: 28px;
+      line-height: 35px;
+      font-weight: normal;
+      font-family: "Archivo Black", sans-serif;
+      width: 500px;
+      margin-bottom: 50px; }
+    .About__description__content {
+      font-size: 16px;
+      font-family: "Happy times";
+      line-height: 22px;
+      column-count: 2;
+      column-gap: 4rem; }
+      .About__description__content b {
+        letter-spacing: 1px; }
+  .About__advice {
+    position: relative; }
+    .About__advice .advice__title {
+      height: 75px;
+      font-size: 70px;
+      font-family: "Happy times";
+      font-weight: normal;
+      position: absolute;
+      top: -75px;
+      right: 100px;
+      overflow: hidden; }
+      .About__advice .advice__title span {
+        display: block;
+        margin-top: 15px; }
+    .About__advice .advice__content {
+      padding: 60px 100px 120px 100px; }
+    .About__advice .advice__podcastList {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .About__advice .advice__podcastItem {
+      margin: 0 20px;
+      border: 1px solid #EAEAEA;
+      border-radius: 5px;
+      padding: 10px 10px 30px 10px;
+      width: 250px;
+      position: relative; }
+      .About__advice .advice__podcastItem:first-child {
+        margin-right: auto; }
+      .About__advice .advice__podcastItem:last-child {
+        margin-left: auto; }
+      .About__advice .advice__podcastItem .podcastItem__illustration {
+        width: calc(250px - 20px);
+        height: calc(250px - 20px);
+        margin-bottom: 30px;
+        overflow: hidden;
+        position: relative; }
+        .About__advice .advice__podcastItem .podcastItem__illustration img {
+          width: 100%; }
+      .About__advice .advice__podcastItem .podcastItem__like {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 15px;
+        bottom: 60px; }
+      .About__advice .advice__podcastItem .podcastItem__name, .About__advice .advice__podcastItem .podcastItem__description {
+        padding-left: 50px; }
+      .About__advice .advice__podcastItem .podcastItem__name {
+        font-size: 16px;
+        margin-bottom: 10px; }
+      .About__advice .advice__podcastItem .podcastItem__description {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: "Archivo", sans-serif; }
+  .About__team {
+    position: relative;
+    border-top: 1px solid #EAEAEA; }
+    .About__team .team__title {
+      height: 75px;
+      font-size: 70px;
+      font-family: "Happy times";
+      font-weight: normal;
+      position: absolute;
+      top: -75px;
+      left: 100px;
+      overflow: hidden; }
+      .About__team .team__title span {
+        display: block;
+        margin-top: 15px; }
+    .About__team .team__presentation {
+      border-bottom: 1px solid #EAEAEA;
+      display: flex; }
+    .About__team .team__description {
+      width: 60%;
+      font-size: 16px;
+      font-family: "Happy times";
+      line-height: 22px;
+      border-right: 1px solid #EAEAEA;
+      padding: 50px 100px; }
+    .About__team .team__logo {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .About__team .team__logo img {
+        height: 130px; }
+    .About__team .team__worker {
+      display: flex;
+      border-bottom: 1px solid #EAEAEA; }
+      .About__team .team__worker .worker {
+        width: 20%;
+        border-right: 1px solid #EAEAEA; }
+        .About__team .team__worker .worker:last-child {
+          border-right: none; }
+        .About__team .team__worker .worker__name {
+          font-family: "Archivo Black", sans-serif;
+          font-size: 25px;
+          font-weight: normal;
+          line-height: 32px;
+          padding: 20px 20px 10px 20px;
+          border-bottom: 1px solid #EAEAEA; }
+        .About__team .team__worker .worker__illustration {
+          width: 100%; }
+        .About__team .team__worker .worker__description {
+          padding: 30px;
+          font-size: 16px;
+          font-family: "Happy times";
+          line-height: 20px;
+          height: 300px;
+          position: relative;
+          border-top: 1px solid #EAEAEA;
+          margin-top: -4px; }
+        .About__team .team__worker .worker__socials-share {
+          display: grid;
+          grid-template-columns: repeat(4, auto);
+          column-gap: 10px;
+          position: absolute;
+          bottom: 30px;
+          left: 30px; }
+          .About__team .team__worker .worker__socials-share svg {
+            height: 12px;
+            fill: #EAEAEA;
+            opacity: 0.5;
+            transition: opacity 0.5s ease-in;
+            margin: 0 2px; }
+            .About__team .team__worker .worker__socials-share svg:hover {
+              opacity: 1; }
+  .About__footer {
+    height: 150px;
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    letter-spacing: 2px;
+    position: relative;
+    border-right: 1px solid #EAEAEA; }
+    .About__footer:after, .About__footer:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .About__footer:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #0B162E;
+      border-width: 50px;
+      margin-top: -50px; }
+    .About__footer:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-left-color: #EAEAEA;
+      border-width: 51px;
+      margin-top: -51px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.glass .glass_name {
+  text-transform: capitalize;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 5em;
+  -webkit-text-stroke: 1px white;
+  background: url(../../../assets/img/drink_medium4.svg) repeat-y;
+  background-position-x: -45px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat-y: no-repeat;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  /* Activate hardware acceleration for smoother animations */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation-duration: 180s;
+  animation: aitf 180s linear infinite;
+  background-position-y: 37px;
+  opacity: 0.3; }
+  .glass .glass_name.drinking {
+    opacity: 1;
+    background-position-y: 37px;
+    animation: aitf 5s linear infinite;
+    animation-duration: 50s; }
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position-x: 0%; }
+  100% {
+    background-position-x: 100%; } }
+
+/*# sourceMappingURL=Glass.css.map */

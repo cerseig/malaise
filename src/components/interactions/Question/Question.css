@@ -1,0 +1,61 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.Question {
+  color: #EAEAEA;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .Question__container {
+    text-align: center; }
+  .Question__label {
+    margin-bottom: 70px; }
+    .Question__label span {
+      color: #EAEAEA;
+      font-family: "Happy times";
+      font-size: 25px;
+      line-height: 30px;
+      width: 100%;
+      text-align: center;
+      font-weight: normal;
+      position: relative; }
+      .Question__label span:after {
+        content: "";
+        width: 110%;
+        height: 1px;
+        background-color: #EAEAEA;
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translateX(-50%); }
+      .Question__label span:after {
+        width: 120%; }
+  .Question__choices {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .Question__choice {
+    font-size: 10px;
+    color: #EAEAEA;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.5s ease-in, background-color 0.5s ease-in;
+    margin: 0 10px; }
+    .Question__choice:hover, .Question__choice:focus, .Question__choice:active {
+      background-color: #EAEAEA;
+      color: #002c36; }
+
+/*# sourceMappingURL=Question.css.map */

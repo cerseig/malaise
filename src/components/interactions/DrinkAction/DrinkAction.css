@@ -1,0 +1,58 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.DrinkAction {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  transition: opacity 0.1s ease-in-out; }
+  .DrinkAction.hide {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out; }
+  .DrinkAction .DrinkAction__timer {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20; }
+  .DrinkAction .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 65%; }
+    .DrinkAction .wrapper .Person_list {
+      margin-bottom: 19px;
+      display: flex;
+      justify-content: space-between; }
+    .DrinkAction .wrapper .Drink_Games_content {
+      color: #EAEAEA;
+      font-size: 14px;
+      border: solid 1px #EAEAEA;
+      background: #002c36;
+      padding: 20px 30px;
+      height: 60px;
+      position: relative; }
+      .DrinkAction .wrapper .Drink_Games_content:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: -9px;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #002c36;
+        border-right: 1px solid #EAEAEA;
+        border-bottom: 1px solid #EAEAEA;
+        -moz-transform: rotate(135deg);
+        -webkit-transform: rotate(135deg); }
+  .DrinkAction .Drink {
+    margin-top: 200px; }
+
+/*# sourceMappingURL=DrinkAction.css.map */

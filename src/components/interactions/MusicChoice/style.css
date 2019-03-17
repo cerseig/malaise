@@ -1,0 +1,110 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.Music {
+  width: 100%;
+  margin-top: -100px; }
+  .Music__list {
+    position: relative; }
+    .Music__list--select .Music__item {
+      opacity: 0; }
+      .Music__list--select .Music__item--selected {
+        opacity: 1; }
+  .Music__content {
+    height: 200px; }
+    .Music__content:nth-child(2) .Music__item {
+      margin-top: 50px; }
+      .Music__content:nth-child(2) .Music__item--selected {
+        margin: 0; }
+  .Music__item {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 1s ease, opacity 1s ease; }
+    .Music__item:hover .Music__name--toLeft span, .Music__item:hover .Music__name--toLeft:after, .Music__item:hover .Music__name--toRight span, .Music__item:hover .Music__name--toRight:after {
+      animation-play-state: paused;
+      color: #ff7471; }
+    .Music__item--selected {
+      position: absolute;
+      top: 40%;
+      transform: scale(3);
+      z-index: 3; }
+      .Music__item--selected .Music__name--toLeft span, .Music__item--selected .Music__name--toLeft:after, .Music__item--selected .Music__name--toRight span, .Music__item--selected .Music__name--toRight:after {
+        animation-play-state: running !important;
+        transition-timing-function: ease-in;
+        animation-duration: 5s;
+        color: #ff7471; }
+  .Music__name {
+    position: absolute;
+    min-width: 100%; }
+    .Music__name--toLeft span, .Music__name--toLeft:after {
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+      top: 0;
+      font-size: 180px;
+      font-family: "Archivo Black", sans-serif;
+      text-transform: lowercase;
+      color: #002c36;
+      text-shadow: #EAEAEA 1px 1px, #EAEAEA -1px 1px, #EAEAEA -1px -1px, #EAEAEA 1px -1px;
+      transition: color 0.5s ease; }
+    .Music__name--toLeft span {
+      animation: toTheLeft1 30s infinite linear; }
+    .Music__name--toLeft:after {
+      position: absolute;
+      top: 0;
+      left: -40px;
+      margin-right: 30px;
+      content: attr(data-after);
+      animation: toTheLeft2 30s infinite linear; }
+    .Music__name--toRight span, .Music__name--toRight:after {
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+      top: 0;
+      font-size: 180px;
+      font-family: "Archivo Black", sans-serif;
+      text-transform: lowercase;
+      color: #002c36;
+      text-shadow: #EAEAEA 1px 1px, #EAEAEA -1px 1px, #EAEAEA -1px -1px, #EAEAEA 1px -1px;
+      transition: color 0.5s ease; }
+    .Music__name--toRight span {
+      animation: toTheRight1 50s infinite linear; }
+    .Music__name--toRight:after {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      content: attr(data-after);
+      animation: toTheRight2 50s infinite linear; }
+
+@keyframes toTheRight1 {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: -100%; } }
+@keyframes toTheRight2 {
+  0% {
+    margin-left: 100%; }
+  100% {
+    margin-left: 0%; } }
+@keyframes toTheLeft1 {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: 100%; } }
+@keyframes toTheLeft2 {
+  0% {
+    margin-left: -100%; }
+  100% {
+    margin-left: 0%; } }
+
+/*# sourceMappingURL=style.css.map */

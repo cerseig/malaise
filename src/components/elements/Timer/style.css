@@ -1,0 +1,92 @@
+/* GLOBAL */
+/* INTERFACE */
+/* XP 1 */
+/*@font-face {
+  font-family: 'Happy Times';
+  src: url('../../fonts/happy-times/happy-times.woff2') format('woff2'),
+  url('../../fonts/happy-times/happy-times.woff') format('woff'),
+  url('../../fonts/happy-times/happy-times.ttf')  format('truetype');
+}*/
+.Timer {
+  width: 100%;
+  height: 100%; }
+  .Timer__active {
+    /* Rotate the right side of the progress bar from 0 to 180 degrees */
+    /* Rotate the left side of the progress bar from 0 to 360 degrees */
+    /* Set the wrapper clip to auto, effectively removing the clip */ }
+    .Timer__active .Timer__container .Timer__base {
+      width: 51px;
+      height: 51px;
+      border-radius: 50%;
+      border: 1px solid #EAEAEA;
+      position: absolute; }
+    .Timer__active .Timer__container .Timer__object {
+      width: 70px;
+      /* Set the size of the progress bar */
+      height: 70px;
+      position: absolute;
+      /* Enable clipping */
+      clip: rect(0px, 50px, 50px, 25px);
+      /* Hide half of the progress bar */ }
+      .Timer__active .Timer__container .Timer__object[data-anim~=wrapper] {
+        -webkit-animation-duration: 0.01s;
+        /* Complete keyframes asap */
+        -webkit-animation-delay: 3.3s;
+        /* Wait half of the animation */
+        -webkit-animation-name: close-wrapper;
+        /* Keyframes name */ }
+    .Timer__active .Timer__container .Timer__mask {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      border: 1px solid #EAEAEA;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: #002c36;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .Timer__active .Timer__container .Timer__circle {
+      width: 50px;
+      height: 50px;
+      border: 15px solid #ff7471;
+      border-radius: 50px;
+      position: absolute;
+      clip: rect(0px, 25px, 50px, 0px);
+      left: 1px;
+      top: 1px; }
+      .Timer__active .Timer__container .Timer__circle[data-anim~=left] {
+        -webkit-animation-duration: 6.6s;
+        /* Full animation time */
+        -webkit-animation-name: left-spin; }
+      .Timer__active .Timer__container .Timer__circle[data-anim~=right] {
+        -webkit-animation-duration: 3.3s;
+        /* Half animation time */
+        -webkit-animation-name: right-spin; }
+    .Timer__active .Timer__container div[data-anim~=base] {
+      -webkit-animation-iteration-count: 1;
+      /* Only run once */
+      -webkit-animation-fill-mode: forwards;
+      /* Hold the last keyframe */
+      -webkit-animation-timing-function: linear;
+      /* Linear animation */ }
+@-webkit-keyframes right-spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(180deg); } }
+@-webkit-keyframes left-spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto); } }
+  .Timer__container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
