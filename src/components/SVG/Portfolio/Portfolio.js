@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Portfolio extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg viewBox="0 0 512.092 512.092">

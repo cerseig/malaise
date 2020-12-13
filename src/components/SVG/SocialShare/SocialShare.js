@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 import './style.scss';
 
 class SocialShare extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <ul className="SocialShare">

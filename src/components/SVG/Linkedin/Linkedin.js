@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Linkedin extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg viewBox="0 0 430.117 430.117">

@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './style.scss';
 
 class WordBox extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg className="WordBox" viewBox="0 0 42 34">

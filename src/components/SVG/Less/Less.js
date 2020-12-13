@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Less extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg viewBox="-490 491 19 19">

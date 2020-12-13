@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import "./style.scss";
 
 class SoundAlert extends Component {
-
-    constructor() {
-        super();
-    }
-
     render() {
         return (
             <div className="SoundAlert">

@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './style.scss';
 
 class Logo extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg className="Logo" viewBox="0 0 380 70">

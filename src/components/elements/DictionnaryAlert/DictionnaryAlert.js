@@ -3,12 +3,6 @@ import "./style.scss";
 import WordBox from "../../SVG/WordBox/WordBox";
 
 class DictionnaryAlert extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-
     render() {
         return (
             <div className="DictionnaryAlert">

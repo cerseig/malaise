@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import './style.scss';
 import Timer from "../../elements/Timer/Timer";
 

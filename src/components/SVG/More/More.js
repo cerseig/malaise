@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class More extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg  viewBox="0 0 19 19">

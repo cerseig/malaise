@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './style.scss';
 
 class Heart extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg className="Heart" width="39px" height="30px" viewBox="0 0 39 30">

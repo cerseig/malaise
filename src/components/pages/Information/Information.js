@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './style.scss';
-import { Link } from 'react-router-dom';
 import More from "../../SVG/More/More";
 import Less from "../../SVG/Less/Less";
 import Heart from "../../SVG/Heart/Heart";
@@ -267,7 +266,7 @@ class Information extends Component {
                                                     <h2 className="videos__title">vidéos</h2>
                                                     <div className="video__primary">
                                                         <div className="video__content">
-                                                            <iframe className="video__youtube" src="https://www.youtube.com/embed/o87SsbCZwFM" frameBorder="0"></iframe>
+                                                            <iframe title="People guess who's a virgin" className="video__youtube" src="https://www.youtube.com/embed/o87SsbCZwFM" frameBorder="0"></iframe>
                                                         </div>
                                                         <div className="video__description">
                                                             <p>People guess who's a virgin <span>CUT</span></p>
@@ -287,7 +286,7 @@ class Information extends Component {
                                                     <ul className="videos__secondary">
                                                         <li>
                                                             <div className="video__content">
-                                                                <iframe className="video__vimeo" src="https://player.vimeo.com/video/100411749" frameBorder="0"></iframe>
+                                                                <iframe title="La sexualité des ados" className="video__vimeo" src="https://player.vimeo.com/video/100411749" frameBorder="0"></iframe>
                                                             </div>
                                                             <div className="video__description">
                                                                 <p>La sexualité des ados  <br /><span>ARTE</span></p>
@@ -295,7 +294,7 @@ class Information extends Component {
                                                         </li>
                                                         <li>
                                                             <div className="video__content">
-                                                                <iframe className="video__other" src="https://www.arte.tv/player/v3/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv1%2Fconfig%2Ffr%2F084432-001-A%3FlifeCycle%3D1&lang=fr_FR" frameBorder="0"></iframe>
+                                                                <iframe title="Education, sexualité, consentement" className="video__other" src="https://www.arte.tv/player/v3/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv1%2Fconfig%2Ffr%2F084432-001-A%3FlifeCycle%3D1&lang=fr_FR" frameBorder="0"></iframe>
                                                             </div>
                                                             <div className="video__description">
                                                                 <p>Education, sexualité, consentement <br /><span>ARTE</span></p>
@@ -303,7 +302,7 @@ class Information extends Component {
                                                         </li>
                                                         <li>
                                                             <div className="video__content">
-                                                                <iframe className="video__facebook" src="https://www.youtube.com/embed/tYyB-BiWlWw" frameBorder="0"></iframe>
+                                                                <iframe title="Sex Education" className="video__facebook" src="https://www.youtube.com/embed/tYyB-BiWlWw" frameBorder="0"></iframe>
                                                             </div>
                                                             <div className="video__description">
                                                                 <p>Sex Education  <br /><span>France Inter</span></p>
@@ -324,9 +323,9 @@ class Information extends Component {
                                                     <h2 className="toFollow__title"><span>comptes à suivre</span></h2>
                                                     <ul className="toFollow__list">
                                                         <li className="account">
-                                                            <a href="https://www.instagram.com/tubandes/" target="_blank">
+                                                            <a href="https://www.instagram.com/tubandes/" target="_blank" rel="noopener noreferrer">
                                                                 <div className="account__illustration">
-                                                                    <img src={tubandes} alt="Photo de profil"/>
+                                                                    <img src={tubandes} alt="Profil"/>
                                                                 </div>
                                                                 <div className="account__like">
                                                                     <Heart />
@@ -335,9 +334,9 @@ class Information extends Component {
                                                             </a>
                                                         </li>
                                                         <li className="account">
-                                                            <a href="https://www.binge.audio/category/les-couilles-sur-la-table/" target="_blank">
+                                                            <a href="https://www.binge.audio/category/les-couilles-sur-la-table/" target="_blank" rel="noopener noreferrer">
                                                                 <div className="account__illustration">
-                                                                    <img src={lescouillessurlatable} alt="Photo de profil"/>
+                                                                    <img src={lescouillessurlatable} alt="Profil"/>
                                                                 </div>
                                                                 <div className="account__like">
                                                                     <Heart />
@@ -346,9 +345,9 @@ class Information extends Component {
                                                             </a>
                                                         </li>
                                                         <li className="account">
-                                                            <a href="https://www.instagram.com/tasjoui/"  target="_blank">
+                                                            <a href="https://www.instagram.com/tasjoui/"  target="_blank" rel="noopener noreferrer">
                                                                 <div className="account__illustration">
-                                                                    <img src={tasjoui} alt="Photo de profil"/>
+                                                                    <img src={tasjoui} alt="Profil"/>
                                                                 </div>
                                                                 <div className="account__like">
                                                                     <Heart />
@@ -360,49 +359,6 @@ class Information extends Component {
                                                     <button className="toFollow__action"><More />Afficher plus</button>
                                                 </div>
                                             </section>
-                                            {/*<section className="Information__sources">
-                                                <div className="sources__container">
-                                                    <h2 className="sources__title">sources</h2>
-                                                    <ul className="sources__list">
-                                                        <div className="sources__column">
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                        </div>
-                                                        <div className="sources__column">
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                            <li className="sources__source">
-                                                                <Link to="/" target="_blank"><h3 className="source__name">France culture</h3></Link>
-                                                                <p className="source__description">Lorem ipsum dolor sit amet la vista baby u know. Vernesh gudli koil juik lop.</p>
-                                                            </li>
-                                                        </div>
-                                                    </ul>
-                                                </div>
-                                            </section>*/}
                                             <section className="Information__footer" onClick={this.handleClickCatalogue}>
                                                 <div className="footer__action">les épisodes</div>
                                             </section>

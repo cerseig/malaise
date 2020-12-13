@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import "./style.scss";
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
-import $ from 'jquery';
-import Loader from "../../elements/Loader/Loader";
 import ErrorScreen from "../../elements/ErrorScreen/ErrorScreen";
 
 class AnecdoteForm extends Component {

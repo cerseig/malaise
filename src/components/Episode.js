@@ -7,7 +7,6 @@ import Interactions from '../components/interactions/Interactions'
 import Loader from '../components/elements/Loader/Loader'
 import ErrorScreen from '../components/elements/ErrorScreen/ErrorScreen'
 import "./episode.scss";
-import $ from 'jquery';
 
 // 1) hours, --> personnalization ?? doorbell, boum, --> presentation soirée
 class Episode extends Component {

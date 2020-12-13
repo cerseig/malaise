@@ -14,12 +14,11 @@ import Credits from './../pages/Credits/Credits'
 import { Howl } from 'howler';
 // QUERY
 import {Query} from "react-apollo";
-import {getMusics} from '../../graphql/queries'
+import {getMusics} from '../../graphql/queries';
 // API CONTEXT
 import {SoundContext} from "../../store/SoundProvider";
-import './interactions.scss'
-import UserContext from '../../store/UserProvider'
-import Sound from "./../../assets/sounds/voix_3_1_dialogue.mp3"
+import './interactions.scss';
+import Sound from "./../../assets/sounds/voix_3_1_dialogue.mp3";
 import Information from "../pages/Information/Information";
 
 

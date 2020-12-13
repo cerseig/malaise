@@ -7,7 +7,6 @@ import ErrorScreen from '../../elements/ErrorScreen/ErrorScreen'
 import Lottie from 'react-lottie';
 import lottieCredit from '../../../assets/animation/text_3_7_ending.json';
 import {UserContext} from '../../../store/UserProvider';
-import {SoundContext} from '../../../store/SoundProvider';
 
 
 class Credits extends Component {
@@ -111,15 +110,6 @@ class Credits extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                            {/*<div className="Credits__music">*/}
-                                                {/*<SoundContext.Consumer>*/}
-                                                    {/*{({musicSelected}) => (*/}
-                                                        {/*<div className="form__column">*/}
-                                                            {/*{musicSelected ? this.displayMusicName(musicSelected) : <div/>}*/}
-                                                        {/*</div>*/}
-                                                    {/*)}*/}
-                                                {/*</SoundContext.Consumer>*/}
-                                            {/*</div>*/}
                                             <div className="Credits__actions">
                                                 <button className="Credits__action" onClick={this.props.info}>Continuer</button>
                                             </div>

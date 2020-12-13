@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './style.scss';
 
 class EmojiSmile extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg  className="EmojiSmile" viewBox="0 0 51 51">

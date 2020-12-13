@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Instagram extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg viewBox="-414 416.9 169.1 169.1">

@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Behance extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <svg x="0px" y="0px" viewBox="0 0 511.958 511.958">

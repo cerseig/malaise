@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./style.scss";
 import Lottie from 'react-lottie';
 import jingle from '../../../assets/animation/anim_1_1_jingle.json';
-import { SoundContext } from "../../../store/SoundProvider";
 
 class Jingle extends Component {
     constructor(props) {
@@ -59,5 +58,4 @@ class Jingle extends Component {
 
 }
 
-/*Jingle.contextType = SoundContext;*/
 export default Jingle;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style.scss';
 import Header from "../../layout/Header/Header";
-import $ from 'jquery';
 
 class Catalogue extends Component {
     constructor(props){

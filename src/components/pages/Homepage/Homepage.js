@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./style.scss";
 import $ from 'jquery';
 import SoundAlert from "../../elements/SoundAlert/SoundAlert";
-import AnimLogo from "../../elements/AnimLogo/AnimLogo";
 import Lottie from 'react-lottie';
 import animationHome from '../../../assets/animation/03';
 import { SoundContext } from "../../../store/SoundProvider";

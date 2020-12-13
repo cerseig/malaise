@@ -100,7 +100,6 @@ class AnimLogo extends Component {
     }
 
     update = () => {
-        var self = this;
         var isSlow = this.isRendered && this.fps < 30;
 
         if (this.isUpdating) {

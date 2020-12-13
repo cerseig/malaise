@@ -7,10 +7,6 @@ class Hours extends Component {
     constructor(props) {
         super(props);
         let currentDateTime = new Date();
-        var currentHours = currentDateTime.getHours();
-        var hours = ("0" + currentHours).slice(-2);
-        var currentMinutes = currentDateTime.getMinutes();
-        var minutes = ("0" + currentMinutes).slice(-2);
 
         this.state = {
             day: currentDateTime.getDay(),
